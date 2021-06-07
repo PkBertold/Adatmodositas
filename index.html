@@ -47,6 +47,16 @@
     }
     </script>
 
+<script>
+    var input = document.getElementById("szovegatiras");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       document.getElementById("myBtn").click();
+      }
+    });
+    </script>
+
 </head>
 <body>
 <div id="Together">
@@ -78,14 +88,14 @@
 <br><br><br><br>
 <button id="btn1">Adatok Törlése</button> <br>    <br>
 
-<label for="Fejlecinput">Add meg az új címet:</label>
+<label for="Fejlecinput">Add meg az új címet (1. sor):</label>
 <input type="text" class="Fejlecinput" id="szovegatiras"> 
-<button onclick="ujcim()" class="btnstyle">GO!</button>
+<button onclick="ujcim()" class="btnstyle" id="myBtn">GO!</button>
 <br>
 
-<label for="Fejlecinput2">Add meg az új címet:</label>
+<label for="Fejlecinput2">Add meg az új címet (2. sor):</label>
 <input type="text" class="Fejlecinput2" id="szovegatiras2"> 
-<button onclick="ujcim2()" class="btnstyle">GO!</button>
+<button onclick="ujcim2()" class="btnstyle" id="myInput">GO!</button>
 <br>
 
 <!--
@@ -94,8 +104,7 @@
 
 <form action="Fill">
     <label for="Leirasinput">Add meg az új leírást:</label>
-    <textarea id="Szoveginput" name="Szoveginput" rows="4" cols="50">
-    </textarea>
+    <textarea id="Szoveginput" name="Szoveginput" rows="4" cols="50" maxlength="161"></textarea>
     </form>
     <button onclick="ujleiras()" class="btnstyle">GO!</button>
 
