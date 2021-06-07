@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>TERC News Test</title>
+
+    <script>
+        $(document).ready(function(){
+          $("#btn1").click(function(){
+            $("#test1").text("");
+            $("#test2").text("");
+            $("#test3").text("");
+            $("#test4").text("");
+          });
+        });
+        </script>
+
+    <script>
+        function ujcim() {
+        var x = document.getElementById("szovegatiras").value;
+            document.getElementById("test1").innerHTML = x;
+    }
+    </script>
+
+    <script>
+        function ujcim2() {
+        var x = document.getElementById("szovegatiras2").value;
+            document.getElementById("test2").innerHTML = x;
+    }
+    </script>
+
+    <script>
+        function ujleiras() {
+        var x = document.getElementById("Szoveginput").value;
+            document.getElementById("test3").innerHTML = x;
+    }
+    </script>
+
+    <script>
+        function ujidopont() {
+        var x = document.getElementById("idopontuj").value;
+            document.getElementById("test4").innerHTML = x;
+    }
+    </script>
+
+</head>
+<body>
+<div id="Together">
+
+<!--
+<img  class="GrayBG"src="Pics/Gray2.jpg" alt="Barcground should be here?!">
+-->
+    <h1 class="Fejlec" id="test1">AutoCAD ONLINE</h1>
+    <h1 class="Fejlec" id="test2">tanfolyam</h1>
+
+<br><br><br>
+
+    <p class="Szoveg" id="test3">
+    Gyakorlati példákon keresztül sajátíthajta el a 
+    műszaki rajz készítést, 3D modellezést.
+    Visszanézhető előadások, csoportos chat, eLearning
+    </p>
+
+    <div class="YellowBox">
+        <h2 class="BoxText" id="test4">2021. június 21-25., 28.</h2>
+    </div>
+
+
+</div>
+<!--
+    Author: LB
+-->
+
+<br><br><br><br>
+<button id="btn1">Adatok Törlése</button> <br>    <br>
+
+<label for="Fejlecinput">Add meg az új címet:</label>
+<input type="text" class="Fejlecinput" id="szovegatiras"> 
+<button onclick="ujcim()" class="btnstyle">GO!</button>
+<br>
+
+<label for="Fejlecinput2">Add meg az új címet:</label>
+<input type="text" class="Fejlecinput2" id="szovegatiras2"> 
+<button onclick="ujcim2()" class="btnstyle">GO!</button>
+<br>
+
+<!--
+<input type="text" class="Szoveginput"> <button>GO!</button>
+-->
+
+<form action="Fill">
+    <label for="Leirasinput">Add meg az új leírást:</label>
+    <textarea id="Szoveginput" name="Szoveginput" rows="4" cols="50">
+    </textarea>
+    </form>
+    <button onclick="ujleiras()" class="btnstyle">GO!</button>
+
+<br>
+<label for="Idopontinput">Add meg az új időpontot:</label>
+<input type="text" class="Fejlecinput2" id="idopontuj"> 
+<button onclick="ujidopont()" class="btnstyle">GO!</button>
+
+
+
+<br><br><br><br>
+<h3>Author: Ladányi Bertold</h3>
+
+
+</body>
+</html>

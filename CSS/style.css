@@ -1,0 +1,75 @@
+#Together {
+    margin: auto;
+    padding: 1px 1px;
+    background-image: url("../Pics/Gray2.jpg");
+    max-height: 451px;
+    max-width: 500px;
+    height: 450px;
+}
+
+body {
+    background-color: lightgrey;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 500px;
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.Fejlec {
+    color: yellow;
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+    text-shadow: -1px -1px 0 rgb(255, 0, 0),
+     1px -1px 0 rgb(255, 0, 0),
+     -1px 1px 0 rgb(255, 0, 0),
+     1px 1px 0 rgb(255, 1, 1);
+}
+
+.Szoveg {
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 98%;
+    line-height: 1.6;
+    font-size: 19px;
+    text-shadow: -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0);
+}
+
+.YellowBox {
+    width: 250px;
+    height: 55px;
+    background-color: yellow;
+    border: 2px solid black;
+    margin: 95px 0 0 120px;
+}
+
+.BoxText {
+    position: center;
+    margin: 5px;
+    width: 99%;
+    padding: 10px 3px 0 3px;
+}
+
+.GrayBG {
+    position: relative;
+}
+
+#btn1 {
+    background-color: rgb(240, 145, 145);
+    color: black;
+    border: 1px solid #ff0000;
+}
+
+.btnstyle {
+    background-color: rgb(200, 235, 192);
+    color: rgb(0, 0, 0);
+    border: 1px solid #009714;  
+}
