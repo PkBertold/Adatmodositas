@@ -17,7 +17,7 @@ body {
 }
 
 .Fejlec {
-    color: yellow;
+    color: rgb(224, 224, 0);
     margin: auto;
     padding: 2px;
     text-align: center;
@@ -46,7 +46,7 @@ body {
 .YellowBox {
     width: 250px;
     height: 55px;
-    background-color: yellow;
+    background-color: rgb(224, 224, 0);
     border: 2px solid black;
     margin: 95px 0 0 120px;
 }
@@ -72,4 +72,23 @@ body {
     background-color: rgb(200, 235, 192);
     color: rgb(0, 0, 0);
     border: 1px solid #009714;  
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+input {
+    border: 1px solid rgb(91, 74, 245);
+}
+
+textarea {
+    border: 1px solid rgb(91, 74, 245);
 }
