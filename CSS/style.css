@@ -47,7 +47,7 @@ body {
 /*
 Rossz az igazítása ennek, elbasztam a div-et és egyszerűbb volt CSS-ben fixálni
 
-.YellowBox2 {
+.YellowBox {
     width: 280px;
     height: 55px;
     background-color: rgb(224, 224, 0);
@@ -103,8 +103,9 @@ textarea {
     height: 55px;
     background-color: rgb(224, 224, 0);
     border: 2px solid black;
-    margin: 0;
     position: absolute;
-    top: 40%;
-    left: 11%;
+    margin: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+    bottom: 500px;
 }
