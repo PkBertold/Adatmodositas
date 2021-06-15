@@ -1,7 +1,9 @@
 #Together {
     margin: auto;
+    background-size: 500px 450px;
+    background-repeat: no-repeat;
     padding: 1px 1px;
-    background-image: url("../Pics/Gray2.jpg");
+    background-image: url("../Pics/Blue1.jpg");
     max-height: 451px;
     max-width: 500px;
     height: 450px;
@@ -21,10 +23,10 @@ body {
     margin: auto;
     padding: 2px;
     text-align: center;
-    text-shadow: -1px -1px 0 rgb(255, 0, 0),
-     1px -1px 0 rgb(255, 0, 0),
-     -1px 1px 0 rgb(255, 0, 0),
-     1px 1px 0 rgb(255, 1, 1);
+    text-shadow: -1px -1px 0 rgb(0, 0, 0),
+     1px -1px 0 rgb(2, 1, 1),
+     -1px 1px 0 rgb(150, 139, 139),
+     1px 1px 0 rgb(8, 8, 8);
 }
 
 .Szoveg {
@@ -42,15 +44,18 @@ body {
     -1px 1px 0 rgb(0, 0, 0),
     1px 1px 0 rgb(0, 0, 0);
 }
+/*
+Rossz az igazítása ennek, elbasztam a div-et és egyszerűbb volt CSS-ben fixálni
 
-.YellowBox {
-    width: 250px;
+.YellowBox2 {
+    width: 280px;
     height: 55px;
     background-color: rgb(224, 224, 0);
     border: 2px solid black;
-    margin: 95px 0 0 120px;
+    margin: 80px 10px 0 105px;
+    position: center;
 }
-
+*/
 .BoxText {
     position: center;
     margin: 5px;
@@ -91,4 +96,15 @@ input {
 
 textarea {
     border: 1px solid rgb(91, 74, 245);
+}
+
+.YellowBox {
+    width: 280px;
+    height: 55px;
+    background-color: rgb(224, 224, 0);
+    border: 2px solid black;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 11%;
 }
